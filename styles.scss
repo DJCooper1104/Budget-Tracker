@@ -1,5 +1,5 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: black;
+$primary-color: white;
 $secondary-color: navy;
 
 @mixin gradient($primary-color, $secondary-color) {
@@ -17,6 +17,9 @@ body {
   font-size: 16px;
   max-width: 43.75em;
   margin: 1em auto;
+}
+h1 {
+  color: $primary-color;
 }
 .container {
   width: 100%;
@@ -145,6 +148,11 @@ body {
   .sub-container {
     grid-template-columns: 1fr;
     gap: 1em;
+  }
+}
+@media screen and (max-width: 1400px) {
+  img {
+    display: none;
   }
 }
 
